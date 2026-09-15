@@ -30,7 +30,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run unit tests
-        run: pytest tests/ -v
+        run: PYTHONPATH= .pytest tests -v
 
       - name: Verify model trains end-to-end on sample data
         run: python -m src.model --train --sample
