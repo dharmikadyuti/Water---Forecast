@@ -1,0 +1,51 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.eggs/
+build/
+dist/
+
+
+# --- Virtual environments ---
+venv/
+env/
+.venv/
+ENV/
+
+# --- Environment / secrets ---
+.env
+.env.local
+*.secret
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Streamlit ---
+.streamlit/secrets.toml
+
+# --- Data (keep sample data only) ---
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# --- Model artifacts ---
+models/*.pkl
+models/*.joblib
+!models/.gitkeep
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# --- Testing / coverage ---
+.pytest_cache/
+.coverage
+htmlcov/

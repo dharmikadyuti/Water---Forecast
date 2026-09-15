@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../data"
+		},
+		{
+			"path": "../../docs"
+		},
+		{
+			"path": "../../models"
+		},
+		{
+			"path": "../../notebooks"
+		},
+		{
+			"path": "../../src"
+		},
+		{
+			"path": "../../tests"
+		},
+		{
+			"path": "../../Water-Forecast"
+		}
+	]
+}
