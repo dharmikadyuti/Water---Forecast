@@ -4,6 +4,9 @@
 
 Category: Water Management | Difficulty: Intermediate–Advanced
 
+🔗 **Live Demo:** [water-forecast-7fa6.onrender.com](https://water-forecast-7fa6.onrender.com)
+> Hosted on Render's free tier — the app may take 30–60 seconds to wake up on first load.
+
 ---
 
 ## 📖 Project Overview
@@ -58,6 +61,8 @@ pip install -r requirements.txt
 ### 2. Add data
 Place your consumption data in `data/raw/`, or use the provided sample in `data/sample/` to try the dashboard immediately.
 
+> 📌 **Note on data:** The bundled dataset (`data/sample/sample_water_consumption.csv`) is **synthetic demo data**, generated to resemble realistic campus water usage patterns — it is not real campus data. Drop your own dataset into `data/raw/consumption.csv` (matching the format below) to use real data instead.
+
 ### 3. Run the dashboard
 ```bash
 streamlit run dashboard/app.py
@@ -96,12 +101,14 @@ Expected columns in `data/raw/consumption.csv`:
 
 ## 🗺️ Roadmap
 
-- [ ] Baseline forecasting model (Random Forest / Prophet)
-- [ ] Streamlit multi-page dashboard
-- [ ] Zone comparison view
-- [ ] Pumping schedule optimizer
-- [ ] Energy savings insights panel
-- [ ] Deploy to Streamlit Community Cloud
+- [x] Baseline forecasting model (Random Forest)
+- [x] Streamlit multi-page dashboard
+- [x] Zone comparison view
+- [x] Pumping schedule optimizer
+- [x] Energy savings insights panel
+- [x] Deploy to Render
+- [ ] Add Prophet/XGBoost as alternative forecasting models
+- [ ] Swap in real campus consumption data
 
 ---
 
