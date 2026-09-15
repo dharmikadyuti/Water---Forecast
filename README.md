@@ -1,4 +1,4 @@
-# 💧 Campus Water Dashboard
+# 💧 Water Forecast
 
 **AI-Based Water Demand Forecasting for Campus Operations**
 
@@ -30,7 +30,7 @@ This project provides a **machine learning-powered dashboard** that:
 ## 🗂️ Project Structure
 
 ```
-campus-water-dashboard/
+water-forecast/
 ├── data/               # raw, processed, and sample datasets
 ├── notebooks/          # EDA and experimentation notebooks
 ├── src/                # core data/ML logic (loader, features, model, optimizer)
@@ -48,8 +48,8 @@ See [`docs/architecture.md`](docs/architecture.md) for how the pieces fit togeth
 
 ### 1. Clone and set up environment
 ```bash
-git clone https://github.com/<your-username>/campus-water-dashboard.git
-cd campus-water-dashboard
+git clone https://github.com/<your-username>/water-forecast.git
+cd water-forecast
 python -m venv venv
 source venv/bin/activate      # Windows: venv\Scripts\activate
 pip install -r requirements.txt
