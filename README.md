@@ -1,8 +1,12 @@
 # 💧 Water - Forecast
+# 💧 Water Forecast
 
 **AI-Based Water Demand Forecasting for Campus Operations**
 
 Category: Water Management | Difficulty: Intermediate–Advanced
+
+🔗 **Live Demo:** [water-forecast-7fa6.onrender.com](https://water-forecast-7fa6.onrender.com)
+> Hosted on Render's free tier — the app may take 30–60 seconds to wake up on first load.
 
 ---
 
@@ -30,7 +34,7 @@ This project provides a **machine learning-powered dashboard** that:
 ## 🗂️ Project Structure
 
 ```
-campus-water-dashboard/
+water-forecast/
 ├── data/               # raw, processed, and sample datasets
 ├── notebooks/          # EDA and experimentation notebooks
 ├── src/                # core data/ML logic (loader, features, model, optimizer)
@@ -48,8 +52,8 @@ See [`docs/architecture.md`](docs/architecture.md) for how the pieces fit togeth
 
 ### 1. Clone and set up environment
 ```bash
-git clone https://github.com/<your-username>/campus-water-dashboard.git
-cd campus-water-dashboard
+git clone https://github.com/<your-username>/water-forecast.git
+cd water-forecast
 python -m venv venv
 source venv/bin/activate      # Windows: venv\Scripts\activate
 pip install -r requirements.txt
@@ -57,6 +61,8 @@ pip install -r requirements.txt
 
 ### 2. Add data
 Place your consumption data in `data/raw/`, or use the provided sample in `data/sample/` to try the dashboard immediately.
+
+> 📌 **Note on data:** The bundled dataset (`data/sample/sample_water_consumption.csv`) is **synthetic demo data**, generated to resemble realistic campus water usage patterns — it is not real campus data. Drop your own dataset into `data/raw/consumption.csv` (matching the format below) to use real data instead.
 
 ### 3. Run the dashboard
 ```bash
@@ -96,12 +102,14 @@ Expected columns in `data/raw/consumption.csv`:
 
 ## 🗺️ Roadmap
 
-- [ ] Baseline forecasting model (Random Forest / Prophet)
-- [ ] Streamlit multi-page dashboard
-- [ ] Zone comparison view
-- [ ] Pumping schedule optimizer
-- [ ] Energy savings insights panel
-- [ ] Deploy to Streamlit Community Cloud
+- [x] Baseline forecasting model (Random Forest)
+- [x] Streamlit multi-page dashboard
+- [x] Zone comparison view
+- [x] Pumping schedule optimizer
+- [x] Energy savings insights panel
+- [x] Deploy to Render
+- [ ] Add Prophet/XGBoost as alternative forecasting models
+- [ ] Swap in real campus consumption data
 
 ---
 
